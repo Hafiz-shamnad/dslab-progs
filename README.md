@@ -1,5 +1,5 @@
 # dslab-progs
 DSLAB programs and algorithms
 
-See src for program code
+See src for program codes  
 See algo for algorithms
