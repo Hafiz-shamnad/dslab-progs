@@ -1,0 +1,42 @@
+# Reverse a singly linked list
+
+Step 1: Start
+
+Step 2: Define a structure for the nodes
+    2.1 It has two items; data and link
+
+Step 3: Define a head pointer and set it to NULL
+
+Step 4: Display the options to insert, display, revere and exit
+
+Step 5: If the choice is to insert, do steps 5.1 to 5.5
+    5.1: Read in the value to insert
+    5.2: Create a new node
+    5.3: new->data = value
+    5.4: new->link = head
+    5.5: head = new
+
+Step 6: Else if the choice is to display, do steps 6.1 to 6.3
+    6.1: Define a pointer ptr and set it to head
+    6.2: If head == NULL, then
+            Print List is empty
+    6.3: Else
+            while ptr != NULL, do
+                Print ptr->data
+                ptr = ptr->link
+            endwhile
+        endif
+
+Step 7: Else if the choice is to reverse, do steps 7.1 to 7.3
+    7.1: Define a pointer prev set to NULL
+    7.2: Define a pointer curr set to head
+    7.3: while curr != NULL, do
+            head = curr
+            curr = curr->link
+            head->link = prev
+            prev = head
+        endwhile
+
+Step 8: Else if the choice is to exit, go to step 9
+
+Step 9: Stop
