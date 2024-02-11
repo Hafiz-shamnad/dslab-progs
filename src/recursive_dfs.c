@@ -4,12 +4,12 @@
 int adj_matrix[MAX_SIZE][MAX_SIZE], visited[MAX_SIZE];
 int n;
 
-void dfs(int vert) {
+void dfs(int vertex) {
     int i;
-    printf("%d ", vert);
-    visited[vert] = 1;
+    printf("%d ", vertex);
+    visited[vertex] = 1;
     for (i = 0; i < n; i++) {
-        if (adj_matrix[vert][i] == 1 && !visited[i])
+        if (adj_matrix[vertex][i] && !visited[i])
             dfs(i);
     }
 }
